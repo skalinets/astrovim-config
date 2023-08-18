@@ -19,5 +19,15 @@ return {
         -- Configuration here, or leave empty to use defaults
       })
     end
+  },
+   {
+    "christoomey/vim-tmux-navigator",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+      require("vim-tmux-navigator").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
+    end
   }
+ 
 }
