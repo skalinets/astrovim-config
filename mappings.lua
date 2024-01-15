@@ -25,9 +25,9 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>gs"] = { "<cmd>G<cr>", desc = "Show fugitive" },
-    -- ["<leader>ga"], vim.cmd.Gwrite)
-    ["<C-k>"] = { "<cmd>cnext<CR>zz" },
-    ["<C-j>"] = { "<cmd>cprev<CR>zz" },
+    ["<leader>ga"] = { "<cmd>Gwrite<cr>", desc = "git add <current buffer>" },
+    -- ["<C-k>"] = { "<cmd>cnext<CR>zz" },
+    -- ["<C-j>"] = { "<cmd>cprev<CR>zz" },
     ["<leader>k"] = { "<cmd>lnext<CR>zz" },
     ["<leader>j"] = { "<cmd>lprev<CR>zz" },
     -- ["J"] = { ":m '>+1<CR>gv=gv" }, -- v
