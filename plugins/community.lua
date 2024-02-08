@@ -23,8 +23,7 @@ return {
                 rainbow_delimiters = true
             }
         }
-    },
-    {import = "astrocommunity.completion.copilot-lua"},
+    }, {import = "astrocommunity.completion.copilot-lua"},
     { -- further customize the options set by the community
         "zbirenbaum/copilot.lua",
         opts = {
@@ -39,17 +38,15 @@ return {
                 }
             }
         }
-    },
-    {import = "astrocommunity.bars-and-lines.smartcolumn-nvim"},
-    {
+    }, {import = "astrocommunity.bars-and-lines.smartcolumn-nvim"}, {
         "m4xshen/smartcolumn.nvim",
         opts = {colorcolumn = 120, disabled_filetypes = {"help"}}
-    },
-    {import = "astrocommunity.completion.copilot-lua-cmp"},
+    }, {import = "astrocommunity.completion.copilot-lua-cmp"},
     {import = "astrocommunity.pack.python-ruff"},
     -- {"", opts = {plugins = {rope = {enabled = true}}}},
-    -- {
-    'linux-cultist/venv-selector.nvim',
-    opts = {search = false, search_workspace = false}
-    -- }
+    {
+        'linux-cultist/venv-selector.nvim',
+        opts = {search = false, search_workspace = false}
+    }, {import = "astrocommunity.motion.leap-nvim"}, 
+    {import = "astrocommunity.motion.harpoon"}
 }
